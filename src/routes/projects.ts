@@ -1,8 +1,8 @@
 import { Router } from "express";
-
+import { createProject } from "../controllers/projects";
 const router = Router();
 
-router.post("/");
+router.post("/", createProject);
 
 router.get("/");
 
